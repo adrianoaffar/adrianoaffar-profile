@@ -1,0 +1,28 @@
+.text-center-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.rounded-image {
+border-radius: 50%; 
+overflow: hidden; 
+}
+.h1,
+.text-box,
+.btn{
+    opacity: 0; 
+    animation: fadeInElement 1s ease-in-out forwards;
+}
+
+
+@keyframes fadeInElement {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
